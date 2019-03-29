@@ -4,6 +4,7 @@
  * Date: 2019/3/12
  * Time: 18:16
  */
+require_once __DIR__.'/vendor/autoload.php';
 
 /**
  * @param $config
@@ -23,7 +24,6 @@ function scan_file($dir, $config){
     if(!is_dir($dir)){
         return array();
     }
-    #$len = strlen($config["dir"])+1;
     $len = 0;
     $files = array();
     $dir_name = explode(DIRECTORY_SEPARATOR,$dir);

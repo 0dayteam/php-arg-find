@@ -6,6 +6,7 @@
  */
 
 require_once "scan.php";
+require_once "find.php";
 use PHPUnit\Framework\TestCase;
 
 class TestScan extends TestCase
@@ -45,6 +46,12 @@ class TestScan extends TestCase
         $result = scan_file($testdir, $config);
         $this->assertNotTrue(in_array($testdir.DIRECTORY_SEPARATOR."black.php", $result, "error blackfile"));
         $this->assertNotFalse(in_array($testdir.DIRECTORY_SEPARATOR."white.php", $result, "error blackfile"));
+    }
+
+    function test_findtp5(){
+        $config = array();
+        $tp5path = pathjoin("testcase", "tp5");
+        find_tp5($tp5path,$config);
     }
 
     # testcase too big

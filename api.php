@@ -16,6 +16,10 @@ switch ($_GET["action"]){
         require_once "scan.php";
         scan($config);
         break;
+    case 'find':
+        require_once "find.php";
+        find($config);
+        break;
     default:
         exit();
 }
