@@ -6,12 +6,11 @@
  */
 $config = require_once "config.php";
 
-
-if(!isset($_GET["action"]) && !is_string($_GET["action"]) ){
+if (!isset($_GET["action"]) && !is_string($_GET["action"])) {
     exit();
 }
 
-switch ($_GET["action"]){
+switch ($_GET["action"]) {
     case "scan":
         require_once "scan.php";
         scan($config);
@@ -23,5 +22,3 @@ switch ($_GET["action"]){
     default:
         exit();
 }
-
-

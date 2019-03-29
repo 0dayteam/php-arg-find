@@ -18,7 +18,6 @@ return array(
         "scan" => "file",
     ),
 
-
     "scan" => array(
         "file" => array(
 
@@ -30,7 +29,7 @@ return array(
                 "includes",
             ),
 
-            "black_file"=> array(
+            "black_file" => array(
                 "api.php",
                 "config.php",
                 "scan.php",
@@ -38,14 +37,14 @@ return array(
 
             "ext" => array(
                 "php",
-            )
+            ),
         ),
         "tp5" => array(
 
-        )
+        ),
     ),
-    "findarg"  => array(
+    "findarg" => array(
 
-    )
+    ),
 
 );
